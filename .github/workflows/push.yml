@@ -1,0 +1,42 @@
+name: Pipeline-Push
+on:
+  push:
+    branches:
+      - master
+jobs:
+
+  MakeContainer:
+    runs-on: ubuntu-latest
+      - uses: actions/checkout@v2
+    steps:
+      
+     - name: Checking files
+       run: ls
+
+     - name: Print somthing
+       run: echo "Make Container"
+
+
+  ExitContainer:
+    runs-on: ubuntu-latest
+      - uses: actions/checkout@v2
+    steps:
+      
+     - name: Make Directory
+       run: mkdir test1
+
+     - name: Make Directory
+       run: mkdir test2
+
+     - name: Show the new directories
+       run: ls
+
+     - name: Print somthing
+       run: echo "Exit Container"
+
+
+
+
+
+    
+
