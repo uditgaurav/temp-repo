@@ -20,8 +20,8 @@ jobs:
 
   ExitContainer:
     runs-on: ubuntu-latest
-      - uses: actions/checkout@v2
     steps:
+     - uses: actions/checkout@v2
       
      - name: Make Directory
        run: mkdir test1
