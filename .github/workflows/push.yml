@@ -7,9 +7,10 @@ jobs:
 
   MakeContainer:
     runs-on: ubuntu-latest
-     - uses: actions/checkout@v2
     steps:
-      
+
+     - uses: actions/checkout@v2
+     
      - name: Checking files
        run: ls
 
